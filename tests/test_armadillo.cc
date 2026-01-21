@@ -1,10 +1,8 @@
 #include <armadillo>
 #include <iostream>
 
-
 using namespace arma;
 using namespace std;
-
 
 int main() {
   mat A(2, 3);
@@ -13,8 +11,12 @@ int main() {
     << endr;
 
   A.print("A:");
+
   mat B = orth(A);
+
   B.print("B:");
+
   cout << "The rank of A is " << arma::rank(A) << endl;
+
   return 0;
 }
